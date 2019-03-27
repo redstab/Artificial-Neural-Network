@@ -8,6 +8,7 @@ def sum_perceptron(x1, x2, w1, w2, b) -> bool:
     return ((x1*w1) + (x2*w2) + b) > 0
 
 def nand(x1, x2) -> bool:
+
     """
     Using -2, -2 as weights one can implement a NAND gate from a perceptron if the bias is 3
     """
@@ -16,8 +17,13 @@ def nand(x1, x2) -> bool:
 
     return sum_perceptron(x1,x2,weights,weights,bias)
 
+def bit_add(x1,x2) -> (int, int):
+    carry = nand(nand(x1,x2), nand(x1,x2))
+    sum = nand(nand(nand(x1,x2), x2), nand(nand(x1,x2), x1))
+    return (sum, carry)
+
 if __name__ == "__main__":
     while(True):
         x1 = int(input("Input[0](0|1): "))
         x2 = int(input("Input[1](0|1): "))
-        print("-> " + str(nand(x1,x2)))
+        print("-> " + str(bit_add(x1,x2)))
