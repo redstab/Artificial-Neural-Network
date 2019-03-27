@@ -18,6 +18,6 @@ def nand(x1, x2) -> bool:
 
 if __name__ == "__main__":
     while(True):
-        x1 = int(input("x1: "))
-        x2 = int(input("x2: "))
+        x1 = int(input("Input[0](0|1): "))
+        x2 = int(input("Input[1](0|1): "))
         print("-> " + str(nand(x1,x2)))
