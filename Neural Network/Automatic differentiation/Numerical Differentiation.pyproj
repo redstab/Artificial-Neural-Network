@@ -2,14 +2,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>e36d900b-23e2-411b-8e92-3f6d3a0622b7</ProjectGuid>
-    <ProjectHome>.</ProjectHome>
-    <StartupFile>Automatic_differentiation.py</StartupFile>
+    <ProjectGuid>3645b6d3-c956-46ad-9709-a6237202777d</ProjectGuid>
+    <ProjectHome>
+    </ProjectHome>
+    <StartupFile>Numerical Differentiation.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
-    <Name>Automatic differentiation</Name>
+    <Name>Numerical Differentiation</Name>
     <RootNamespace>Automatic differentiation</RootNamespace>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
@@ -21,7 +22,7 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Automatic_differentiation.py" />
+    <Compile Include="Numerical Differentiation.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
