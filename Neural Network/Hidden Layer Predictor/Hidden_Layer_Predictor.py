@@ -51,4 +51,4 @@ Total Maximum:       n = \033[36m{}\033[0m
 
 The number of hidden neurons is between: \033[35m[{}] \033[36m-> \033[36m[{}] \033[37mwith a predicted maximum of \033[34m[{}]
 \033[37mThe best calculated prediction is: \033[92m[{}]\033[0m
-""".format(Input_Neurons, Output_Neurons, Sample_Size, Alpha, hobs, sqrt, thmax, tmax, math.ceil(min(Output_Neurons, hobs, sqrt, 1)), tmax, round(thmax), round(mean([hobs, sqrt]))))
+""".format(Input_Neurons, Output_Neurons, Sample_Size, Alpha, hobs, sqrt, thmax, tmax, math.ceil(min(Output_Neurons, hobs, sqrt)), tmax, round(thmax), round(mean([hobs, sqrt]))))
